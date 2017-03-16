@@ -38,22 +38,30 @@
 
 
 <searchBar>
-    <div>
-      <form action="POST" class="">
-        <label for="zipCode">ENTER ZIP CODE</label>
-        <input class="zipInput" type="text" name="zipCode" value="" placeholder="ENTER ZIP. NOW.">
 
+  <div id="search">
+    <div id="zipBar" >
+      <form action="POST" >
+        <label for="zipCode" class="toggleHolderText "></label>
+        <input class="zipInput" type="text" name="zipCode" value="" placeholder="ENTER ZIP NOW.">
       </form>
 
     </div>
 
-    <div class="toggleHolder" > <h3 class="toggleHolderText">Restaurant</h3>
+    <div class="toggleHolder" id="toggleBar" > <h3 class="toggleHolderText">Restaurant</h3>
       <label class="switch">
         <input type="checkbox">
         <div class="slider round"></div>
       </label>
         <h3 class="toggleHolderText">Bars</h3>
     </div>
+  </div>
+
+  <div >
+    <label for="submitButton" placeholder="DECID"></label>
+    <input id="submitButton" type="submit" value="DECID">
+  </div>
+
 </searchBar>
 
 <displayResults>
