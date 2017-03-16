@@ -5,9 +5,14 @@ titleImage
 strongBorder
 phraseGen
 loginModule
+searchBar
+search
+submit
+togggleBar
 toggleHolder
 toggleHolderText
 zipInput
+zipBar
 */
 
 
@@ -26,6 +31,7 @@ COLOR PALETTE: http://www.colourlovers.com/palette/1002423/for_the_betterment?c=
 body {
 
   background-color: rgba(214, 204, 169, .89);
+
 
 }
 
@@ -132,8 +138,8 @@ nav {
   justify-content: flex-end;
   align-items: center;
   background-color: #612B1F;
-  border-radius: 0, 0, 25px, 25px;
- /* padding: 10px;*/
+  border-radius: 0 0 25px 25px;
+
 }
 
 .loginModule {
@@ -143,7 +149,8 @@ nav {
   text-transform: lowercase;
   color: black, opacity: .8;
   border-radius: 4px;
-  border-radius: 0, 0, 25px, 25px;
+  border-radius: 0 0 25px 25px;
+
 }
 
 .loginModule:hover {
@@ -161,6 +168,21 @@ searchBar {
   margin: 3vh;
 }
 
+#search {
+  height: 5vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #FBC042;
+  border-radius: 28px;
+  border: 5px ridge black;
+
+
+}
+
 displayResults {
   height: 65vh;
   display: flex;
@@ -171,6 +193,25 @@ displayResults {
   border: 5px grey dashed;
   margin: 3vh;
 }
+
+#submitButton {
+    width: 8vh;
+    height: 8vh;
+    margin: 5px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: rgb(63, 74, 187);
+    border-width:5px;
+    border-style:groove;
+    text-align: center;
+
+}
+
+#submitButton:hover {
+  filter: drop-shadow(2px 1px 8px #BA160C);
+}
+
 
 
 .toggleHolder {
@@ -185,6 +226,7 @@ displayResults {
 .toggleHolderText {
   padding: 5px;
   text-transform: lowercase;
+  font-family: 'Undergrad-UltraThin', sans-serif;
 }
 
 .zipInput::-webkit-input-placeholder {
@@ -204,6 +246,35 @@ displayResults {
 }
 
 
+#zipBar {
+
+
+  height: 5vh;
+  background: #FBC042;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+
+
+
+
+}
+
+#toggleBar {
+  height: 5vh;
+  border-radius: 25px;
+  border: 5px ridge black;
+  background: #F56334;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+
+}
 
 
 
