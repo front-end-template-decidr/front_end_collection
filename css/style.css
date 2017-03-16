@@ -5,9 +5,11 @@ titleImage
 strongBorder
 phraseGen
 loginModule
+togggleBar
 toggleHolder
 toggleHolderText
 zipInput
+zipBar
 */
 
 
@@ -173,6 +175,7 @@ displayResults {
 }
 
 
+
 .toggleHolder {
   height: 10vh;
   display: flex;
@@ -185,6 +188,7 @@ displayResults {
 .toggleHolderText {
   padding: 5px;
   text-transform: lowercase;
+  font-family: 'Undergrad-UltraThin', sans-serif;
 }
 
 .zipInput::-webkit-input-placeholder {
