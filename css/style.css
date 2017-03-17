@@ -140,12 +140,10 @@ loginForm {
   height: 50vh;
   padding: 2vh;
 
-
-
 }
 
 
-nav {
+.secNav {
   height: 3vh;
   display: flex;
   flex-direction: column;
@@ -179,7 +177,7 @@ searchBar {
   flex-flow: row;
   justify-content: center;
   align-items: center;
-  border: 5px grey dashed;
+/*  border: 5px grey dashed;*/
   margin: 3vh;
 }
 
@@ -214,7 +212,7 @@ displayResults {
   flex-flow: row;
   justify-content: flex-end;
   align-items: flex-end;
-  border: 5px grey dashed;
+/*  border: 5px grey dashed;*/
   margin: 3vh;
 }
 
