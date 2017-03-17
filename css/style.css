@@ -47,21 +47,21 @@ header {
   border: 8px black solid;
 }
 
-a:link {
+.hoverable:link {
   color: grey;
   text-decoration: none;
 }
 
-a:visited {
+.hoverable:visited {
     color: #F56334;
 }
 
-a:hover {
+.hoverable:hover {
   color: #F56334;
   filter:saturate(200);
 }
 
-a:active {
+.hoverable:active {
   color: black, opacity: .8;
   text-decoration: none;
 }
