@@ -82,22 +82,52 @@ header {
   box-shadow: 0 0 0 2px rgb( 155, 201, 199 );*/
 
 }
+.logoTitle {
+  color: black;
+  text-shadow: 2px 2px 4px #612B1F;
+  letter-spacing: 10px;
+  font-family: 'Russo One', sans-serif;
+}
+
+.logoTitle:link {
+
+  text-decoration: none;
+}
+
+.logoTitle:visited {
+   /* color: #F56334;*/
+}
+
+.logoTitle:hover {
+  color: #BA160C;
+ /* filter:saturate(140);*/
+}
+
+.logoTitle:active {
+ /* color: rgba(0,0,0,0.8);*/
+  text-decoration: none;
+}
 
 .titleImage {
   background-color: #F56334;
   text-align: center;
+  color: black;
   height: 10vh;
   width: 75vw;
   border-radius: 25px;
+  color: black;
   border: 5px grey ridge;
   text-shadow: 2px 2px 4px #612B1F;
   letter-spacing: 10px;
   font-family: 'Russo One', sans-serif;
 
+
 }
 
 .titleImage:hover {
-  filter:saturate(200);
+/*  filter:saturate(200);*/
+color: #9E4E47;
+filter: invert(75%);
 }
 
 .phraseGen {
@@ -121,7 +151,7 @@ header {
 
 
 /*  line-height: 3px;*/
-  font-size: 13px;
+  font-size: 10px;
 }
 
 .phraseGen:hover {
@@ -170,7 +200,7 @@ loginForm {
   filter: drop-shadow(8px 8px 10px red);
 }
 
-searchBar {
+searchbarflex {
   height: 10vh;
   display: flex;
   flex-direction: column;
@@ -179,6 +209,8 @@ searchBar {
   align-items: center;
 /*  border: 5px grey dashed;*/
   margin: 3vh;
+  box-shadow: inset 0px 8px 10px gray,
+         inset -10px 8px 15px gray, inset 10px 8px 15px gray;
 }
 
 #search {
@@ -192,6 +224,8 @@ searchBar {
   background: #FBC042;
   border-radius: 28px;
   border: 5px ridge black;
+  box-shadow:  0px 8px 10px gray,
+          -10px 8px 15px gray,  10px 8px 15px gray;
 
 
 }
@@ -205,16 +239,65 @@ searchBar {
   padding: 1vh;
 }
 
-displayResults {
+displayresults {
   height: 65vh;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   flex-flow: row;
   justify-content: flex-end;
   align-items: flex-end;
-/*  border: 5px grey dashed;*/
+  border: 5px grey dashed;
   margin: 3vh;
 }
+
+resultbox {
+  height: 60vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: rows;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: space-around;
+  border: 5px grey dashed;
+/*  margin: 3vh;*/
+
+}
+
+mapframe {
+  height: 60vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+/*  margin-top: 2vh;
+  margin-bottom: 2vh;*/
+  border: 5px grey dashed;
+
+}
+
+
+usernamegreeting {
+  text-align: center;
+  height: 6vh;
+  width: 45vw;
+  border-radius: 9px;
+  color: rgba(0,0,0,0.8);
+  border: 3px #FBC042 solid;
+  opacity: .80;
+  text-shadow: 2px 2px 4px #000000;
+  font-family: 'Undergrad-UltraThin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 
 #submitButton {
     width: 8vh;
@@ -270,6 +353,7 @@ displayResults {
 
 
 
+
 #zipBar {
 
 
@@ -306,6 +390,20 @@ displayResults {
 
 }
 
+  .loginTitle {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  filter:saturate(200);
+  color: #F56334;
+}
+/*.loginTitle:hover {
+  color: #F56334;
+  filter:saturate(200);
+}
+*/
+
+
+
 .createInput {
   width: 50vw;
   height: 3vh;
@@ -318,15 +416,20 @@ displayResults {
   width: 30vw;
   height: 3vh;
   border-radius: 25px;
+  border: 3px black ridge;
+  line-height: 3px;
   background: #F56334;
   font-family: 'Undergrad-UltraThin', sans-serif;
 
 
 }
+
 .createInputSubmit:hover {
 -webkit-box-shadow: 9px 10px 14px 0px rgba(0,0,0,0.74);
 -moz-box-shadow: 9px 10px 14px 0px rgba(0,0,0,0.74);
 box-shadow: 9px 10px 14px 0px rgba(0,0,0,0.74);
+filter:saturate(200);
+font-color: #F56334;
 }
 
 
@@ -347,7 +450,7 @@ box-shadow: 9px 10px 14px 0px rgba(0,0,0,0.74);
 }
 
 
-
+/*This switch was designed by and taken from: https://www.w3schools.com/howto/howto_css_switch.asp*/
 /*SWITCH START*/
 .switch {
   position: relative;
@@ -405,3 +508,206 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }/*SWITCH END*/
+
+
+#flexcanvas{
+  width: 100%;
+  height: 65vh !important;
+/*  border: 5px dashed grey;*/
+}
+
+.rowParent, .columnParent{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+/*  border: 5px dashed grey;*/
+}
+
+.columnParent{
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+/*  border: 5px dashed grey;*/
+}
+
+.flexChild{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+ /* border: 5px dashed grey;*/
+}
+
+
+#columnChild67924{
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto; height: 10vh;
+/* border: 5px dashed grey;*/
+/*opacity: .80;*/
+}
+
+
+#columnChild64584{
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto; height: 10vh;
+/* border: 5px dashed grey;*/
+-webkit-box-shadow: -10px -10px 44px 0px rgba(184,173,131,1);
+-moz-box-shadow: -10px -10px 44px 0px rgba(184,173,131,1);
+box-shadow: -10px -10px 44px 0px rgba(184,173,131,1);
+/*opacity: .80;*/
+}
+
+
+#rowChild78008{
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto; width: 40vw;
+ display: inline-flex;
+ flex-direction: row;
+ align-items: flex-end;
+  justify-content: flex-end;
+/* border: 5px dashed grey;*/
+  -webkit-box-shadow: 9px -9px 44px 0px rgba(184,173,131,1);
+-moz-box-shadow: 9px -9px 44px 0px rgba(184,173,131,1);
+box-shadow: 9px -9px 44px 0px rgba(184,173,131,1);
+/*opacity: .80;*/
+
+}
+
+
+#columnChild46481{
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto; height: 10vh;
+/* border: 5px dashed grey;*/
+-webkit-box-shadow: -10px -10px 44px 0px rgba(184,173,131,1);
+-moz-box-shadow: -10px -10px 44px 0px rgba(184,173,131,1);
+box-shadow: -10px -10px 44px 0px rgba(184,173,131,1);
+/*opacity: .80;*/
+}
+
+
+#container{
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 0 auto;
+ -ms-flex: 0 0 auto;
+ flex: 0 0 auto; width: 80vw; height: 60vh; -webkit-align-self: center; -ms-flex-item-align: center; align-self: center;
+
+}
+
+.mapcontain {
+  background-size: contain;
+
+}
+
+.price {
+
+}
+
+.rating {
+
+
+}
+
+.restaurantName {
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 4px #612B1F;
+  letter-spacing: 10px;
+  font-family: 'Idealist Sans', sans-serif; /*<This is a beautiful free font designed by Glenn Jan from https://www.behance.net/gallery/8536015/Free-Idealist-Sans . The guy is awesome and a beautiful craftsman. */
+  padding: 1vh;
+/*  opacity: .80;*/
+  letter-spacing: 1vw;
+  text-transform: capitalize;
+
+}
+
+#favoriteButton {
+    width: 8vh;
+    height: 8vh;
+    margin: 5px;
+/*    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;*/
+    border-width:5px;
+    border-style:groove;
+    background-color: #b69133; /*this color is called burnished gold*/
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /*this is a hexagon*/
+}
+
+#favoriteButton:hover {
+  filter: drop-shadow(2px 1px 8px #BA160C);
+}
+
+#submitButton:focus {
+  outline: 0;
+}
+
+#favoriteButton:focus {
+  outline:0;
+}
+
+.hoverable:focus {
+  outline:0;
+}
+
+.labelText {
+  font-family: 'Idealist Sans', sans-serif;
+/*  background-color: #FBE671;*/
+  margin: 1vh;
+
+}
+
+.priceRating {
+  font-family: 'Idealist Sans', sans-serif;
+  text-transform: lowercase;
+/*  background-color: #FBE671;*/
+  margin: 1vh;
+  /*opacity: .80;*/
+
+}
+
+.commentAreaClass {
+  font-family: 'Koliko Light', sans-serif;
+  font-size: 110%;
+ /* background-color: #B8AD83; save for potential border uses*/
+  margin: 1vh;
+  word-wrap: break-word;
+/*  background-color: #FBE671;*/
+/*  opacity: .80;*/
+
+
+}
+
+

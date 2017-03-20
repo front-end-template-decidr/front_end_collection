@@ -7,11 +7,11 @@
   <script type="text/javascript" src="js/app.js"></script> <!-- JAVASCRIPT LINK! REMEMBER: VANILLA ONLY!!! -->
   <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit/MyFontsWebfontsKit.css">
-<!--   <link rel="stylesheet" type="text/css" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="css/magic-master/magic.min.css"> --> <!-- MAGIC MASTER LOCAL LINK -->
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/magic-master/magic.min.css"> <!-- MAGIC MASTER LOCAL LINK -->
   <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- THIS HAS TO GO LAST -->
 
-  <title>Decidr Create User</title>
+  <title>Decidr Login View</title>
 
 </head>
 <body>
@@ -39,19 +39,8 @@
 
   <loginForm>
 
-
     <form onSubmit={this.handleSubmit.bind(this)}>
-
-          <label><h3 class="createHolderText">First Name:</h3></label>
-          <input class="createInput"  name="first_name"
-          onChange={this.handleChange.bind(this)}
-          type='text' placeholder="  First Name" /><br /><br />
-
-          <label><h3 class="createHolderText">Last Name:</h3></label>
-          <input class="createInput" name="last_name"
-          onChange={this.handleChange.bind(this)}
-          type='text' placeholder="  Last Name" /><br /><br />
-
+          <h1 class="loginTitle">LOGIN</h1><br>
           <label><h3 class="createHolderText">E-mail:</h3></label>
           <input class="createInput" name="email"
           onChange={this.handleChange.bind(this)}
